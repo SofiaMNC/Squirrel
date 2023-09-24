@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Squirrel"
-               BuildableName = "Squirrel"
-               BlueprintName = "Squirrel"
-               ReferencedContainer = "container:">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "SquirrelUI"
                BuildableName = "SquirrelUI"
                BlueprintName = "SquirrelUI"
@@ -43,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:Tests/Squirrel-Package.xctestplan"
+            reference = "container:Tests/SquirrelUI/SquirrelUI.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
@@ -68,9 +54,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "Squirrel"
-            BuildableName = "Squirrel"
-            BlueprintName = "Squirrel"
+            BlueprintIdentifier = "SquirrelUI"
+            BuildableName = "SquirrelUI"
+            BlueprintName = "SquirrelUI"
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>

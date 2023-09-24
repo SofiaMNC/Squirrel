@@ -16,6 +16,12 @@ let package = Package(
                 "Squirrel"
             ]
         ),
+        .library(
+            name: "SquirrelUI",
+            targets: [
+                "SquirrelUI"
+            ]
+        ),
     ]
 )
 
@@ -35,6 +41,27 @@ package.targets.append(contentsOf: [
                 "Squirrel"
             ],
             path: "Tests/Squirrel"
+        ),
+    ]
+)
+
+// MARK: - SquirrelUI
+
+package.targets.append(contentsOf: [
+    Target
+        .target(
+            name: "SquirrelUI",
+            dependencies: [
+                "Squirrel"
+            ],
+            path: "Sources/SquirrelUI"
+        ),
+        .testTarget(
+            name: "SquirrelUITests",
+            dependencies: [
+                "SquirrelUI"
+            ],
+            path: "Tests/SquirrelUI"
         ),
     ]
 )

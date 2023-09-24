@@ -1,8 +1,8 @@
 {
   "configurations" : [
     {
-      "id" : "CB60B2B1-B333-40B5-A8CE-D63127BF58C0",
-      "name" : "Configuration 1",
+      "id" : "E44A94C2-BF14-49B1-B3D7-37B58AE1BC19",
+      "name" : "Test Scheme Action",
       "options" : {
 
       }
@@ -13,8 +13,8 @@
       "targets" : [
         {
           "containerPath" : "container:",
-          "identifier" : "Squirrel",
-          "name" : "Squirrel"
+          "identifier" : "SquirrelUI",
+          "name" : "SquirrelUI"
         }
       ]
     },
@@ -22,14 +22,6 @@
     "testTimeoutsEnabled" : true
   },
   "testTargets" : [
-    {
-      "parallelizable" : true,
-      "target" : {
-        "containerPath" : "container:",
-        "identifier" : "SquirrelTests",
-        "name" : "SquirrelTests"
-      }
-    },
     {
       "parallelizable" : true,
       "target" : {
