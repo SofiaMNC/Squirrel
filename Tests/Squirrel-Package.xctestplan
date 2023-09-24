@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "CB60B2B1-B333-40B5-A8CE-D63127BF58C0",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:",
+          "identifier" : "Squirrel",
+          "name" : "Squirrel"
+        }
+      ]
+    },
+    "testExecutionOrdering" : "random",
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "SquirrelTests",
+        "name" : "SquirrelTests"
+      }
+    }
+  ],
+  "version" : 1
+}

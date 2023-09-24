@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "4CDE97E3-2AA7-411F-A5C3-76A5F89AEAF0",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:",
+          "identifier" : "Squirrel",
+          "name" : "Squirrel"
+        }
+      ]
+    },
+    "testExecutionOrdering" : "random",
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "SquirrelTests",
+        "name" : "SquirrelTests"
+      }
+    }
+  ],
+  "version" : 1
+}
