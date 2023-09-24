@@ -34,7 +34,7 @@ package.targets.append(contentsOf: [
             dependencies: [
                 "Squirrel"
             ],
-            path: "Tests/SquirrelTests"
+            path: "Tests/Squirrel"
         ),
     ]
 )

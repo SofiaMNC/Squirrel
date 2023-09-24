@@ -1,12 +1,12 @@
 import XCTest
 @testable import Squirrel
 
-final class SquirrelTests: XCTestCase {
+final class CacheTests: XCTestCase {
     
     // MARK: - Lifecycle
     
     override func setUpWithError() throws {
-        sut = Cache(entryLifetime: SquirrelTests.entryLifetime)
+        sut = Cache(entryLifetime: CacheTests.entryLifetime)
     }
     
     override func tearDownWithError() throws {
@@ -92,7 +92,7 @@ final class SquirrelTests: XCTestCase {
         
         // Then
         let expectation = XCTestExpectation(description: "Cached data is stale")
-        DispatchQueue.main.asyncAfter(deadline: .now() + SquirrelTests.entryLifetime) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + CacheTests.entryLifetime) {
             // Data is now stale
             expectation.fulfill()
         }
